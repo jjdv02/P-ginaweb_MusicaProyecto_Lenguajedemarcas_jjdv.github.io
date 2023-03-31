@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 15px;
+  background: #30322e;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(242, 174, 38);
+}
+
+.header h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 70px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+table {
+	  border-collapse: collapse;
+	  margin: 20px auto;
+	}
+  
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 style="color:white">Tame Impala </h1>
+  <h2 style="color:white"></h2>
+</div>
+
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Las 5 canciones más populares de Tame Impala</h2>
+	  <table>
+		<thead>
+			<tr>
+				<th>Canción</th>
+				<th>Álbum</th>
+				<th>Año</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Let It Happen</td>
+				<td>Currents</td>
+				<td>2015</td>
+			</tr>
+			<tr>
+				<td>The Less I Know The Better</td>
+				<td>Currents</td>
+				<td>2015</td>
+			</tr>
+			<tr>
+				<td>Elephant</td>
+				<td>Lonerism</td>
+				<td>2012</td>
+			</tr>
+			<tr>
+				<td>Feels Like We Only Go Backwards</td>
+				<td>Lonerism</td>
+				<td>2012</td>
+			</tr>
+			<tr>
+				<td>Borderline</td>
+				<td>The Slow Rush</td>
+				<td>2020</td>
+			</tr>
+		</tbody>
+	</table>
+    <div class="card">
+      <h2>¿Quienes son Tame Impala...?</h2>
+      <div> <img src="https://www.nme.com/wp-content/uploads/2016/09/2015TameImpala-pg-13280515-1-1-696x464.jpg" alt="Tame Impala"></div>
+      <p>Tame Impala es el proyecto de música psicodélica del multiinstrumentista australiano Kevin Parker.​ En el estudio de grabación, Parker compone, graba, interpreta y produce toda la música del proyecto. En sus giras, Tame Impala está formado por Parker (guitarra, voz), Dominic Simper (guitarra, sintetizador), Jay Watson (sintetizador, voz, guitarra), Cam Avery (bajo, voz) y Julien Barbagallo (batería, voz). El grupo tiene una estrecha relación con la banda australiana de rock psicodélico Pond, con la que comparte miembros y colaboradores, como Nick Allbrook, antiguo miembro de Tame Impala.</p>
+    </div>
+    <p><a href="C:\Users\jjdon\Desktop\Informática\1º DAW\Lenguaje de Marcas\Proyecto_PáginaWeb\Proyecto_PáginaWeb_JJDV.html">Página principal</a></p>
+  </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2><p>© 2023 Tame Impala. Todos los derechos reservados.</p></h2>
+</div>
+
+</body>
+</html>
+
+
